@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Exo+2:ital@1&family=Rampart+One&family=Rubik+Iso&display=swap" rel="stylesheet">
+	<title>Important Dates</title>
+	<style type="text/css">
+		body{
+			background-image: url('bg3.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		a{
+			font-family: 'Exo 2', sans-serif;
+		}
+		p{
+			font-family: 'Exo 2', sans-serif;
+			color: #001885;
+		}
+		#p1{
+			font-family: 'Exo 2', sans-serif;
+			color: #c7dfcf;
+		}
+		#div1{
+			background-color: #83a09b;
+		}
+		h1, h2{
+			font-family: 'Rubik Iso', cursive;
+			color: #c7dfcf;
+		}
+		#div2{
+			background-color: #0b4f8e;
+		}
+		th{
+			font-family: 'Exo 2', sans-serif;
+			color: #a1cfea;
+		}
+		td{
+			font-family: 'Exo 2', sans-serif;
+			color: #d2f4f5;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+	<a class="navbar-brand" href="#">HAPPY BIRTHDAY XIN</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Homepage</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="importantdates.html">Important Dates</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="cheesy.html">Cheesy</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="aboutfounder.html">About Founder</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<br>
+
+<div class="container" id="div1">
+	<br>
+	<h1>IMPORTANT DATES</h1>
+	<p id="p1">that I'm aware of atleast...</p>
+	<hr>
+</div>
+
+<div class="container mt-3" id="div2">
+	<br>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>date</th>
+        <th>importance</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>April 11, 2021</td>
+        <td>On this day, naging MU tayo. AHAHAHA naalala ko pa kilig ko noon. I had the biggest fattest juciest crush on you loll! "I MISS YOU MORE THEN"?!?!?!</td>
+      </tr>
+      <tr>
+        <td>February 22, 2022</td>
+        <td>Oh my goshhh. I will never forget this day. You made 22 such a special number for me...</td>
+      </tr>
+      <tr>
+        <td>November 22, 2022</td>
+        <td>HAHAHA sorryyy important rin!!! hirap pala magmove on sayo noh </td>
+      </tr>
+      <tr>
+        <td>January 31, 2023</td>
+        <td>**plays babalik sayo by moira** but anyways... CAN I ASK YOU A QUESTION-</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
